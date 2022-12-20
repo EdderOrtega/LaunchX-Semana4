@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    border: 0;
+    background-color: rgb(8, 7, 32);
+}
+.main{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+.titulopokedex{
+    text-align: center;
+    font-size: 50px;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    -webkit-box-shadow:-8px 50px 22px 10px #34add5 ;
+-moz-box-shadow:-8px 50px 22px 10px #34add5 ;
+box-shadow:-8px 50px 22px 10px #34add5 ;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.vista{
+    border-radius: 20px;
+    background-color: red;
+    display: grid;
+}
+.trapecio{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 854px;
+    width: 350px;
+    height: 0px;
+    border-right: 0px solid transparent;
+    border-left: 250px solid transparent;
+    border-top: 145px solid  rgb(8, 7, 32);
+    background-color:  #0101067d;
+}
+.info{
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: azure;
+    background-color: grey;
+    border-bottom: solid black;
+}
+.pokePhoto{
+    border: solid black 10px;
+    margin: 0 0 30px;
+    margin-left: 58px;
+    display: grid;
+    background-color: aliceblue;
+    border-color:black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.pokePhoto img {
+    background-color: aliceblue;
+}
+
+#pokeImg{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+}
+@keyframes anim{
+    0% {background-color: blue;} /*azul*/
+    25% {background-color: red;} /*rojo*/
+    50% {background-color: blue;} /*azul*/
+    75% {background-color: red;} /*Otra vez rojo*/
+    100% {background-color: blue;} /*Otra vez azul*/
+}
+
+.pokecard .luzazul{
+    width: 70px;
+    height:70px;
+    display: grid;
+    align-self: flex-start;
+    margin: 10px;
+    border: solid 7px;
+    border-color: whitesmoke;
+    border-radius: 100%;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.pokecard{
+    border-radius: 20px;
+    background-color: red;
+    width: 300px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 100px 50px 50px 50px;
+    margin-right: 150px;
+}
+.pokecard2{
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    display: grid;
+    background-color: rgb(164, 10, 41);
+
+    grid-template-columns: 50px 50px 50px;
+    margin-right: 50px;
+}
+
+
+.pokecard .luzroja{
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    border: solid rgb(3, 2, 2) 2px;
+    border-radius: 100%;
+    background-color: rgb(164, 10, 41);
+}
+.pokecard2 .luzamarilla{
+    width: 60px;
+    border: solid rgb(3, 2, 2) 2px;
+    margin-left: 50px;
+    height: 30px;
+    margin-top: 10px;
+    display: grid;
+    border-radius: 40%;
+    background-color: yellow;
+}
+.pokecard2 .luzverde{
+    border: solid rgb(3, 2, 2) 2px;
+    width: 60px;
+    margin-left: 80px;
+    height: 30px;
+    display: grid;
+    border-radius: 40%;
+    margin-top: 10px;
+    background-color: green;
+}
+.pokecard2 .luzroja{
+    width: 60px;
+    border: solid rgb(3, 2, 2) 2px;
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 10px;
+    display: grid;
+    border-radius: 100%;
+    background-color: blue;
+}
+.pokecard .luzamarilla{
+    width: 30px;
+    border: solid rgb(3, 2, 2) 2px;
+    margin-left: 40px;
+    height: 30px;
+    margin-top: 10px;
+    display: grid;
+    border-radius: 100%;
+    background-color: yellow;
+}
+.pokecard .luzverde{
+    border: solid rgb(3, 2, 2) 2px;
+    width: 30px;
+    margin-left: 40px;
+    height: 30px;
+    display: grid;
+    border-radius: 100%;
+    margin-top: 10px;
+    background-color: green;
+}
+.buscar{
+    color: blue;
+    background-color: rgb(164, 10, 41);
+    padding: 10px;
+    border-radius: 0 0 0 20px;
+}
+#pokeName{
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Irish Grover', cursive;
+    color: black;
+    height: 20px;
+    border-radius: 10px;
+}
+.buscarbtn{
+    font-family: 'Irish Grover', cursive;
+    font-size: large;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(26, 25, 40);
+    color: rgb(250, 247, 241);
+    padding: 10px;
+}
+.pokemonimg{ 
+    background-color: aliceblue;
+    width: 350px;
+    height: 250px;
+    display: grid;
+    padding: 10px;
+}
+#pokemonName{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: xx-large;
+    color: aliceblue;
+    padding: 5px;
+    background-color: rgb(30, 87, 47);
+    border: rgb(254, 253, 253) solid 2px;
+}
+#habilidades{
+    font-family: 'Irish Grover', cursive;
+    margin: 20px 20px 0 20px;
+    color: whitesmoke;
+    font-size: x-large;
+    background-color:  rgb(32, 28, 28);
+}
+#tipo{
+    margin: 0 20px 0 20px;
+    font-family: 'Irish Grover', cursive;
+    color: whitesmoke;
+    font-size: x-large;
+    padding: 10px;
+    background-color:  rgb(32, 28, 28);
+}
+#numero{
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    padding: 10px;
+    font-size: x-large;
+    background-color:  rgb(32, 28, 28);
+}
+#peso{
+    font-size: x-large;
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    background-color:  rgb(32, 28, 28);
+    padding: 10px;
+}
+#altura{
+    font-size: x-large;
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    padding: 10px;
+    background-color:  rgb(32, 28, 28);
+}
+#experiencia{
+    font-size: x-large;
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    background-color:  rgb(32, 28, 28);
+    padding: 10px;   
+}
+#hp{
+    font-size: x-large;
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    background-color:  rgb(32, 28, 28);
+    padding: 10px;   
+}
+#ataque{
+    font-size: x-large;
+    font-family: 'Irish Grover', cursive;
+    margin: 0 20px 0 20px;
+    color: aliceblue;
+    background-color:  rgb(32, 28, 28);
+    padding: 10px;   
+}
+.pokescreen{
+    background-color:  rgb(32, 28, 28);
+    border-radius: 10px;
+    margin: 90px 20px 20px 20px; 
+    height: 550px;
+    color:aliceblue;
+    border: whitesmoke inset 2px;
+}
+
+#cruz {
+    display: grid; 
+    justify-content: center;
+    align-items: center;    
+    margin-left: 300px;
+    margin-top: -30px;
+    background: #000000;
+    height: 120px;
+    position: relative;
+    width: 40px;
+}
+#cruz::after {
+    background: #090913;
+    content: "";
+    height: 38px;
+    left: -47px;
+    position: absolute;
+    top: 40px;
+    width: 135px;
+}
+
+.borrar{
+    display: grid;
+    height: 120px;
+    width: 145px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 248px;
+    font-family: 'Irish Grover', cursive;
+    font-size: large;
+    background-color: transparent;
+    color: white;
+    z-index: 2;
+    margin-top: -30px;
+}
